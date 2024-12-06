@@ -79,9 +79,9 @@ const Header = () => {
         className="md:hidden z-50 relative text-2xl focus:outline-none"
       >
         {isMobileMenuOpen ? (
-          <FaTimes />
+          <FaTimes className="text-gray-800" />
         ) : (
-          <FaBars  />
+          <FaBars />
         )}
       </motion.button>
 
@@ -95,13 +95,6 @@ const Header = () => {
             variants={mobileMenuVariants}
             className="fixed inset-0 bg-white z-40 md:hidden"
           >
-            {/* <motion.button
-              onClick={toggleMobileMenu}
-              whileTap={{ scale: 0.9 }}
-              className="md:hidden z-60 relative text-2xl focus:outline-none"
-            >
-              <FaTimes className="text-gray-800" />
-            </motion.button> */}
             <ul className="flex flex-col h-full justify-center items-center space-y-8">
               {menuLinks.map((link) => (
                 <motion.li
