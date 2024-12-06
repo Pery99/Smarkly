@@ -16,6 +16,7 @@ const reasons = [
     longDescription:
       "Our performance-based pricing model ensures that you invest only in tangible results. We align our success directly with yours, providing a transparent and risk-mitigated approach to lead generation.",
     icon: FaChartLine,
+    img: "/result-driven.jpg",
     color: "from-blue-500 to-cyan-500",
     bgColor: "bg-gradient-to-br from-blue-50 to-cyan-50",
   },
@@ -26,6 +27,7 @@ const reasons = [
     longDescription:
       "We leverage deep insights and cutting-edge techniques across diverse digital platforms, ensuring your message reaches the right audience at the right time with precision and impact.",
     icon: FaCogs,
+    img: "/platform.webp",
     color: "from-purple-500 to-indigo-500",
     bgColor: "bg-gradient-to-br from-purple-50 to-indigo-50",
   },
@@ -35,6 +37,7 @@ const reasons = [
     longDescription:
       "We don't believe in one-size-fits-all. Our team crafts bespoke strategies that are meticulously designed to address the unique challenges and opportunities of your specific business ecosystem.",
     icon: FaUserCog,
+    img: "/solution.jpg",
     color: "from-green-500 to-teal-500",
     bgColor: "bg-gradient-to-br from-green-50 to-teal-50",
   },
@@ -45,6 +48,7 @@ const reasons = [
     longDescription:
       "Our comprehensive service eliminates the complexity of lead management. From initial contact to scheduled appointment, we manage the entire customer acquisition journey with professional precision.",
     icon: FaHandshake,
+    img: "/end-to-end.jpg",
     color: "from-orange-500 to-amber-500",
     bgColor: "bg-gradient-to-br from-orange-50 to-amber-50",
   },
@@ -54,6 +58,7 @@ const reasons = [
     longDescription:
       "Our track record speaks volumes. With a portfolio of successful campaigns and satisfied clients across multiple industries, we bring proven methodologies and a commitment to driving tangible business growth.",
     icon: FaTrophy,
+    img: "/sucess.webp",
     color: "from-red-500 to-pink-500",
     bgColor: "bg-gradient-to-br from-red-50 to-pink-50",
   },
@@ -104,7 +109,16 @@ const WhyUs = () => {
                 </h3>
                 <FaInfoCircle className="ml-2 text-gray-500 opacity-50" />
               </div>
-              <p className="text-gray-600">{reason.description}</p>
+              <div className="mb-4">
+                <img
+                  src={reason.img}
+                  alt={reason.title}
+                  className="w-full h-48 object-cover rounded-lg shadow-sm"
+                />
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                {reason.description}
+              </p>
             </motion.div>
           ))}
         </div>
