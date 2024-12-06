@@ -30,8 +30,8 @@ const platforms = [
   {
     name: "Google",
     icon: FaGoogle,
-    color: "text-green-600",
-    bgColor: "bg-green-100",
+    color: "text-[#4285F4]",
+    bgColor: "bg-[#E6F2FF]",
     description:
       "Optimize search and display advertising for maximum visibility and conversion.",
   },
@@ -72,13 +72,10 @@ const Services = () => {
   const [selectedPlatform, setSelectedPlatform] = useState(null);
 
   return (
-    <section
-      id="services"
-      className="py-20 px-6 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden"
-    >
+    <section id="services" className="py-20 px-6 relative overflow-hidden">
       {/* Subtle Background Shapes */}
-      <div className="absolute -top-20 -left-20 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl" />
-      <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-purple-200/30 rounded-full blur-3xl" />
+      {/* <div className="absolute -top-20 -left-20 w-56 h-96 bg-[#2C3E50] rounded-full blur-3xl" />
+      <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-purple-200/30 rounded-full blur-3xl" /> */}
 
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -86,7 +83,7 @@ const Services = () => {
         transition={{ duration: 0.6 }}
         className="max-w-6xl mx-auto"
       >
-        <h2 className="text-4xl font-extrabold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+        <h2 className="text-4xl font-extrabold text-center mb-16 bg-clip-text text-[#E6F2FF]">
           Our Lead Generation Platforms
         </h2>
 
@@ -107,7 +104,7 @@ const Services = () => {
               >
                 <platform.icon className={`text-5xl ${platform.color}`} />
               </motion.div>
-              <h3 className="text-lg font-semibold text-gray-800">
+              <h3 className="text-lg font-semibold text-[#E6F2FF]">
                 {platform.name}
               </h3>
             </motion.div>

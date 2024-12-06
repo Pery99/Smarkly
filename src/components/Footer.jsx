@@ -40,17 +40,17 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-blue-900 text-white py-16 px-6">
+    <footer className="text-[#E6F2FF] py-16 px-6">
       <div className="container mx-auto grid md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div>
           <motion.h3
             whileHover={{ scale: 1.05 }}
-            className="text-3xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-300"
+            className="text-3xl font-extrabold mb-4 bg-clip-text"
           >
             Smarkly Agency
           </motion.h3>
-          <p className="text-white/80 mb-4">
+          <p className="mb-4">
             Creating opportunities for lasting business growth through
             innovative lead generation strategies.
           </p>
@@ -83,7 +83,7 @@ const Footer = () => {
               >
                 <a
                   href={link.href}
-                  className="text-white/80 hover:text-white hover:underline transition-all"
+                  className="hover:text-white hover:underline transition-all"
                 >
                   {link.label}
                 </a>
@@ -104,7 +104,7 @@ const Footer = () => {
               >
                 <a
                   href="#"
-                  className="text-white/80 hover:text-white hover:underline transition-all"
+                  className="hover:text-white hover:underline transition-all"
                 >
                   {service}
                 </a>
@@ -121,7 +121,7 @@ const Footer = () => {
               <FaEnvelope className="text-blue-400" />
               <a
                 href="mailto:info@smarkly.com"
-                className="hover:underline text-white/80 hover:text-white"
+                className="hover:underline  hover:text-white"
               >
                 info@smarkly.com
               </a>
@@ -130,14 +130,14 @@ const Footer = () => {
               <FaPhone className="text-blue-400" />
               <a
                 href="tel:+1234567890"
-                className="hover:underline text-white/80 hover:text-white"
+                className="hover:underline  hover:text-white"
               >
                 +1 (234) 567-890
               </a>
             </div>
             <div className="flex items-center space-x-3">
               <FaMapMarkerAlt className="text-blue-400" />
-              <span className="text-white/80">
+              <span className="">
                 123 Business Lane, Suite 456
               </span>
             </div>
@@ -166,7 +166,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="text-center mt-12 pt-6 border-t border-white/20">
-        <p className="text-white/70">
+        <p>
           &copy; {currentYear} Smarkly Agency. All rights reserved.
         </p>
       </div>

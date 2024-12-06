@@ -40,14 +40,14 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-white border-b border-gray-100 text-gray-800 py-4 px-6 flex justify-between items-center shadow-sm relative z-50"
+      className=" text-white py-4 px-6 flex justify-between items-center shadow-sm relative z-50"
     >
       <motion.div
         className="flex items-center space-x-3"
         whileHover={{ scale: 1.05 }}
       >
-        <FaRocket className="text-blue-600 text-2xl" />
-        <motion.h1 className="text-3xl font-bold text-gray-900 tracking-tight">
+        <FaRocket className=" text-2xl" />
+        <motion.h1 className="text-3xl font-bold tracking-tight">
           Smarkly
         </motion.h1>
       </motion.div>
@@ -63,7 +63,7 @@ const Header = () => {
             >
               <a
                 href={link.href}
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+                className="hover:text-slate-100 transition-colors duration-300 font-medium"
               >
                 {link.label}
               </a>
@@ -79,9 +79,9 @@ const Header = () => {
         className="md:hidden z-50 relative text-2xl focus:outline-none"
       >
         {isMobileMenuOpen ? (
-          <FaTimes className="text-gray-800" />
+          <FaTimes />
         ) : (
-          <FaBars className="text-gray-800 " />
+          <FaBars  />
         )}
       </motion.button>
 

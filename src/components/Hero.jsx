@@ -8,12 +8,12 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative overflow-hidden bg-gray-900 text-white py-24 px-6"
+      className="relative overflow-hidden text-white py-24 px-6"
     >
       {/* Background Gradient and Animated Elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900 via-purple-900 to-blue-900 animate-gradient-xy"></div>
-      </div>
+      {/* <div className="absolute inset-0 z-0">
+        <div className="absolute"></div>
+      </div> */}
 
       {/* Content Container */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
@@ -23,10 +23,10 @@ const Hero = () => {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="mb-6"
         >
-          <h2 className="text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-400 animate-text-glow tracking-tight leading-tight">
+          <h2 className="text-6xl text-[#E6F2FF] font-extrabold mb-4 bg-clip-text leading-tight">
             Empower Your Business Growth
           </h2>
-          <p className="text-xl text-gray-200/80 max-w-2xl mx-auto leading-relaxed">
+          <p className=" text-[#E6F2FF] text-xl max-w-2xl mx-auto leading-relaxed">
             Harness the power of cutting-edge lead generation and optimization
             strategies to take your business to the next level.
           </p>
@@ -69,7 +69,7 @@ const Hero = () => {
             boxShadow: "0 0 15px rgba(100, 200, 255, 0.8)",
           }}
           whileTap={{ scale: 0.95 }}
-          className="bg-gradient-to-r from-blue-500 to-purple-600 text-white 
+          className="bg-[#2C3E50] text-white 
           py-3 px-8 rounded-full text-lg font-bold 
           shadow-lg hover:shadow-2xl transition duration-300 
           transform hover:-translate-y-1"
