@@ -42,7 +42,6 @@ const Header = () => {
       transition={{ duration: 0.5 }}
       className="bg-white border-b border-gray-100 text-gray-800 py-4 px-6 flex justify-between items-center shadow-sm relative z-50"
     >
-      {/* Logo with Rocket */}
       <motion.div
         className="flex items-center space-x-3"
         whileHover={{ scale: 1.05 }}
@@ -77,12 +76,12 @@ const Header = () => {
       <motion.button
         onClick={toggleMobileMenu}
         whileTap={{ scale: 0.9 }}
-        className="md:hidden z-60 relative text-2xl focus:outline-none"
+        className="md:hidden z-50 relative text-2xl focus:outline-none"
       >
         {isMobileMenuOpen ? (
           <FaTimes className="text-gray-800" />
         ) : (
-          <FaBars className="text-gray-800" />
+          <FaBars className="text-gray-800 " />
         )}
       </motion.button>
 
@@ -96,6 +95,13 @@ const Header = () => {
             variants={mobileMenuVariants}
             className="fixed inset-0 bg-white z-40 md:hidden"
           >
+            {/* <motion.button
+              onClick={toggleMobileMenu}
+              whileTap={{ scale: 0.9 }}
+              className="md:hidden z-60 relative text-2xl focus:outline-none"
+            >
+              <FaTimes className="text-gray-800" />
+            </motion.button> */}
             <ul className="flex flex-col h-full justify-center items-center space-y-8">
               {menuLinks.map((link) => (
                 <motion.li
