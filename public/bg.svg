@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <!-- Gradient background -->
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6A11CB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2575FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rectangle -->
+  <rect width="1200" height="600" fill="url(#heroGradient)"/>
+  
+  <!-- Geometric shapes with varying opacity and blur -->
+  <g opacity="0.3">
+    <circle cx="200" cy="100" r="80" fill="white" filter="url(#blurFilter)"/>
+    <circle cx="1000" cy="500" r="100" fill="white" filter="url(#blurFilter)"/>
+  </g>
+  
+  <!-- Defs for blur effect -->
+  <defs>
+    <filter id="blurFilter">
+      <feGaussianBlur stdDeviation="15" />
+    </filter>
+  </defs>
+  
+  <!-- Dynamic geometric shapes -->
+  <path d="M0 300 Q600 200, 1200 350" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="10"/>
+  
+  <!-- Triangular overlays -->
+  <polygon points="0,0 400,0 0,300" fill="rgba(255,255,255,0.1)"/>
+  <polygon points="1200,600 800,600 1200,300" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Subtle grid effect -->
+  <pattern id="gridPattern" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  </pattern>
+  
+  <rect width="1200" height="600" fill="url(#gridPattern)" opacity="0.5"/>
+</svg>

@@ -12,12 +12,8 @@ const Hero = () => {
     >
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
-        {/* <img
-          src="/api/placeholder/1920/1080"
-          alt="Business Background"
-          className="w-full h-full object-cover opacity-30"
-        /> */}
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/70 to-purple-700/70"></div>
+        {/* from-indigo-600/70 to-purple-700/70 */}
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-blue-900"></div>
       </div>
 
       {/* Content Container */}
